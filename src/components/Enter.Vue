@@ -2,19 +2,29 @@
     <div id="Enter">
      
         <!--Start of the Parallax-->
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/parallax1.jpg"></div>
-    </div>
-    <div class="section white">
-      <div class="row container">
-        <h2 class="header">Parallax</h2>
-        <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-      </div>
-    </div>
-    <div class="parallax-container">
-      <div class="parallax"><img src="images/parallax2.jpg"></div>
-    </div>
+        <div id="parallax">
+              <div class="parallax-container">
+                    <div class="parallax">
+                        <img :src="Images.fullBanner" style="opacity:1;">
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="row" style="background-color:#1A171B">
+                        <br>
+                        <h5 class="white-text text-darken-3 lighten-3">
+                            "If one thought created the universe, 
+                            then who was the first to think?"
+                        </h5>
+                        <h5 class="header">- Justin Gladstone</h5>
+                        <br>
+                    </div>
+                </div>
+                <div class="parallax-container">
+                    <div class="parallax">
+                        <img src="images/parallax2.jpg">
+                    </div>
+                </div>
+        </div>
         <!--End of the Parallax--->
 
     </div>
@@ -23,6 +33,13 @@
 <style scoped>
 #Enter{
     padding-top:5%;
+}
+
+/*Area for parallax to start*/
+#parallax{
+    position: absolute;
+    width: 100%;
+    top:0%;
 }
 </style>
 
@@ -33,6 +50,7 @@ export default {
         return{
             Images:{
                 banner: require("/Users/atakoramuriel/Desktop/tosh/Img/GrandBanner.jpg"), //Main banner edited
+                fullBanner: require("/Users/atakoramuriel/Desktop/tosh/Img/fullBanner.jpg"), //Display the complete banner for parallax
             }
         }
     },
