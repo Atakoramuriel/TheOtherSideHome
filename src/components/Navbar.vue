@@ -5,8 +5,9 @@
                 <a href="#" class="right brand-logo">TheOtherSide</a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="sass.html">Home</a></li>
-                    <li><a href="badges.html">Shop</a></li>
+                    <li><a href="badges.html">Story</a></li>
                     <li><a href="collapsible.html">Social</a></li>
+
                 </ul>
                 </div>
         </nav>
