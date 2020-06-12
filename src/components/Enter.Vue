@@ -9,7 +9,7 @@
                     </div>
                 </div>
                 <div class="section">
-                    <div class="row" style="background-color:#1A171B">
+                    <div class="row" id="section1">
                         <br>
                         <h5 class="white-text text-darken-3 lighten-3">
                             "If one thought created the universe, 
@@ -40,6 +40,11 @@
     position: absolute;
     width: 100%;
     top:0%;
+}
+
+/*Change background for Section1*/
+#section1{
+    background-image: linear-gradient(to right,#4B1411,black);
 }
 </style>
 
