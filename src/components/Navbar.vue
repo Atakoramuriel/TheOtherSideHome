@@ -5,10 +5,10 @@
                 <a href="#" class="right brand-logo" style="padding-right:1%;">TheOtherSide</a>
                 <!---This is the top section of the topNav---->
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><h5 class="white-text"><i class="material-icons">home</i><b>Home</b></h5></li>
-                    <li><h5 class="white-text"><i class="material-icons">import_contacts</i><b>Story</b></h5></li>
-                    <li><h5 class="white-text"><i class="material-icons">people_outline</i><b>Social</b></h5></li>
-                    <li><h5 class="white-text"><i class="material-icons">redeem</i><b>Shop</b></h5></li>
+                    <li><h5><i class="material-icons">home</i><b>Home</b></h5></li>
+                    <li><h5><i class="material-icons">import_contacts</i><b>Story</b></h5></li>
+                    <li><h5><i class="material-icons">people_outline</i><b>Social</b></h5></li>
+                    <li><h5><i class="material-icons">redeem</i><b>Shop</b></h5></li>
                 </ul>
                 </div>
 <br><br>
@@ -46,6 +46,10 @@
     h5:hover{
         cursor: pointer;
         color: #EA8D55;
+    }
+
+    h5{
+        
     }
 
     /*Handle hover over each Nav button*/
