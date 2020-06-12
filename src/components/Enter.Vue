@@ -45,6 +45,9 @@
 /*Change background for Section1*/
 #section1{
     background-image: linear-gradient(to right,#4B1411,black);
+    position: absolute;
+    width: 100%;
+    top:48%;
 }
 </style>
 
