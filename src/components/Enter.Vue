@@ -29,6 +29,7 @@
                             <div class="col s12 m4 l4">
                                 <h3 class="white-text" id="bookTitle">TheOtherSide</h3>
                                 <img :src="Images.bookI"  id="bookCover" v-on:click="bookIDesc=!bookIDesc">
+                                <!--Transitions will appear below for the text on clear--->
                                 <h6 class="white-text" v-if="bookIDesc">The Other Side is a mystery and fantasy novel 
                                     that delves into a parallel world that almost completely 
                                     reflects our own. If people reflect us, then what could we 
@@ -38,12 +39,14 @@
                             </div>
                         <!--Describe each of the books in this area-->
                             <div class="col s12 m4 l4"><br><br><br><br><br><br><br><br><br>
+                            <!--The text below needs to be animated in--->
                               <h3 class="white-text" id="header2">Choose your Journey</h3>
                             </div>
                         <!--Describe the second book-->
                             <div class="col s12 m4 l4">
                                 <h3 class="white-text" id="bookTitle">TheOtherSide2</h3>
                                  <img :src="Images.bookII" id="bookCover2" v-on:click="bookIIDesc=!bookIIDesc">
+                                 <!--Transitions will appear below for the text--->
                                 <h6 class="white-text" v-if="bookIIDesc">The Other Side is a mystery and fantasy novel 
                                     that delves into a parallel world that almost completely 
                                     reflects our own. If people reflect us, then what could we 
