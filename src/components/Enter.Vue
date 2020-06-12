@@ -19,6 +19,13 @@
                         <br>
                     </div>
                 </div>
+                <div class="section">
+                    <div class="row" id="section2">
+                        <div class="col s12">
+                            <h3 class="white-text">Books</h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="parallax-container">
                     <div class="parallax">
                         <img src="images/parallax2.jpg">
@@ -47,7 +54,14 @@
     background-image: linear-gradient(to right,#4B1411,black);
     position: absolute;
     width: 100%;
-    top:48%;
+    top:42.5%;
+}
+
+/*Section Second*/
+#section2{
+    position:absolute;
+    top:60%;
+    width: 100%;
 }
 </style>
 
