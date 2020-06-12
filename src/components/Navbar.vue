@@ -14,7 +14,7 @@
                 </div>
 <br><br>
                 <!---Bottom section of the Top Nav--->
-                  <div class="row topNav"  style="">
+                  <div class="row topNav "  style="">
                     <div class="nav-content hide-on-med-and-down">
                       <ul>
                         <li class="tab"><h6>Timeline</h6></li>
@@ -81,6 +81,12 @@
         top: 2%;
     }
 
+    /*Add hover CSS for each tab in the Submenu*/
+    h6:hover{
+        cursor: pointer;
+        color: coral;
+        font-size: 150%;
+    }
   
     /*For the mobile banner, tablets and phones*/
     #titleMobile{
