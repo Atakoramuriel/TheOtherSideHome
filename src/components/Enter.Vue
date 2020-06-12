@@ -28,8 +28,8 @@
                         <!--Describe the first book-->
                             <div class="col s12 m4 l4">
                                 <h3 class="white-text" id="bookTitle">TheOtherSide</h3>
-                                <img :src="Images.bookI"  id="bookCover">
-                                <h6 class="white-text">The Other Side is a mystery and fantasy novel 
+                                <img :src="Images.bookI"  id="bookCover" v-on:click="bookIDesc=!bookIDesc">
+                                <h6 class="white-text" v-if="bookIDesc">The Other Side is a mystery and fantasy novel 
                                     that delves into a parallel world that almost completely 
                                     reflects our own. If people reflect us, then what could we 
                                     say about our emotions? Is our sadness a result of their happiness? 
@@ -43,8 +43,8 @@
                         <!--Describe the second book-->
                             <div class="col s12 m4 l4">
                                 <h3 class="white-text" id="bookTitle">TheOtherSide2</h3>
-                                 <img :src="Images.bookII" style="width:55%;" id="bookCover2">
-                                <h6 class="white-text">The Other Side is a mystery and fantasy novel 
+                                 <img :src="Images.bookII" id="bookCover2" v-on:click="bookIIDesc=!bookIIDesc">
+                                <h6 class="white-text" v-if="bookIIDesc">The Other Side is a mystery and fantasy novel 
                                     that delves into a parallel world that almost completely 
                                     reflects our own. If people reflect us, then what could we 
                                     say about our emotions? Is our sadness a result of their happiness? 
@@ -52,6 +52,19 @@
                             </div>
                     </div>
                 </div>
+                <!--This is the start of the next section-->
+                  <div class="section">
+                    <div class="row" id="section3">
+                        <br>
+                        <h5 class="white-text text-darken-3 lighten-3">
+                            "If one thought created the universe, 
+                            then who was the first to think?"
+                        </h5>
+                        <h5 class="header">- Justin Gladstone</h5>
+                        <br>
+                    </div>
+                </div>
+
                 <div class="parallax-container">
                     <div class="parallax">
                         <img src="images/parallax2.jpg">
@@ -112,7 +125,29 @@
 #bookCover{
     width: 60%;
 }
+#bookCover:hover{
+    cursor: pointer;
+    width:65%;
+    border: solid coral 2px;
+}
 
+/*Styling for the second book on the right*/
+#bookCover2{
+    width: 55%;
+}
+#bookCover2:hover{
+    cursor: pointer;
+    width:60%;
+    border: solid rgb(80, 150, 255) 2px;
+}
+
+/*CSS for editing the third section*/
+#section3{
+    background-image: linear-gradient(to right,#4B1411,black);
+    position: absolute;
+    width: 100%;
+    top:125%;
+}
 
 </style>
 
@@ -128,7 +163,11 @@ export default {
                 //Area for the book Coveres
                 bookI: require("/Users/atakoramuriel/Desktop/tosh/Img/BookCover.jpg"),
                 bookII: require("/Users/atakoramuriel/Desktop/tosh/Img/BookII.jpg"),
-            }
+            },
+
+            //Display book Descriptions
+            bookIDesc: false,
+            bookIIDesc: false
         }
     },
     created(){
