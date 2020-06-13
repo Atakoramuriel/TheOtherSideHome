@@ -34,7 +34,8 @@
                                     that delves into a parallel world that almost completely 
                                     reflects our own. If people reflect us, then what could we 
                                     say about our emotions? Is our sadness a result of their happiness? 
-                                </h6>                  
+                                </h6>  <br>   
+                                <div class="btn large black-text" style="background-color:coral;" v-if="bookIDesc">Start</div>             
 
                             </div>
                         <!--Describe each of the books in this area-->
@@ -45,13 +46,23 @@
                         <!--Describe the second book-->
                             <div class="col s12 m4 l4">
                                 <h3 class="white-text" id="bookTitle">TheOtherSide2</h3>
+                              
                                  <img :src="Images.bookII" id="bookCover2" v-on:click="bookIIDesc=!bookIIDesc">
                                  <!--Transitions will appear below for the text--->
                                 <h6 class="white-text" v-if="bookIIDesc">The Other Side is a mystery and fantasy novel 
                                     that delves into a parallel world that almost completely 
                                     reflects our own. If people reflect us, then what could we 
                                     say about our emotions? Is our sadness a result of their happiness? 
-                                </h6>
+                                </h6> <br>
+                                <div class="btn large blue black-text" v-if="bookIIDesc">Start</div>
+                            </div>
+
+                            <div class="background">
+                               
+                                <!--Section for loaders to add some movement and life to the background-->
+                                  <div class="progress" style="background-color:#1B1A1B;">
+                                    <div class="indeterminate" style="background-color:#4B1411;"></div>
+                                  </div>
                             </div>
                     </div>
                 </div>
@@ -75,6 +86,9 @@
                 </div>
         </div>
         <!--End of the Parallax--->
+         <div class="backRow"> 
+              <p>.</p>
+        </div>
 
     </div>
 </template>
@@ -115,8 +129,7 @@
 /*This is the header for Section 2*/
 #header2{
     /*font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif*/
-    font-family: cursive
-    
+    font-family: cursive; 
 }
 
 /*Edit the book title*/
@@ -152,6 +165,24 @@
     top:125%;
 }
 
+/*This handles the background*/
+.background{
+    position: absolute;
+    width:100%;
+    top:85%;
+    z-index: -1;
+}
+
+/*Back row*/
+.backRow{ /*This is the brown background row that appears behind the books*/
+    background-color:#100807;
+    padding-top:10%;
+    padding-bottom:5%;
+    position: absolute;
+    width: 100%;
+    top:123%;
+    z-index: -2;
+}
 </style>
 
 
