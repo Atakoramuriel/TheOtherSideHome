@@ -96,9 +96,11 @@
         <!--Background quotes to the page that are fixed-->
         <div class="backQuotes">
             <div class="row">
-                <div class="col s12 m4 l4"><h3 class="blue-grey-text">But</h3></div>
-                <div class="col s12 m4 l4"><h3 class="blue-grey-text">Will you understand?</h3></div>
-                <div class="col s12 m4 l4"><h3 class="blue-grey-text"></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>Even with this sad life, I still had a reason to run</i></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>I cried because i was scared, Even I experianced all those things.</i></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>But... will you understand?</i></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i> - Haru</i></h3></div>
+                
             </div>
         </div>
 
@@ -124,6 +126,7 @@
     position: absolute;
     width: 100%;
     top:42.5%;
+    z-index: 1;
 }
 
 /*Section Second*/
@@ -131,6 +134,7 @@
     position:absolute;
     top:56%;
     width: 100%;
+    z-index: 1;
 }
 
 /*This is the header for Section 1*/
@@ -194,7 +198,19 @@
     position: absolute;
     width: 100%;
     top:123%;
+    z-index: -1;
+}
+
+/*Background quotes*/
+.backQuotes{
+    position:fixed;
+    top:35%;
+    width:100%;
     z-index: -2;
+    opacity: 0.06;
+    font-family: cursive;
+    color:#0C0E13;
+    
 }
 </style>
 
