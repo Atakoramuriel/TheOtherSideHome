@@ -6,10 +6,10 @@
                  <a href="#" class="center brand-logo hide-on-large-only"  style=""><img id="titleMobile" :src="Images.title"></a>
                 <!---This is the top section of the topNav---->
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><h5><i class="material-icons">home</i><b>Home</b></h5></li>
-                    <li><h5><i class="material-icons">import_contacts</i><b>Story</b></h5></li>
-                    <li><h5><i class="material-icons">people_outline</i><b>Social</b></h5></li>
-                    <li><h5><i class="material-icons">redeem</i><b>Shop</b></h5></li>
+                    <li><h5><i class="material-icons">home</i><b><router-link to="/" style="font-size:95%;">Home</router-link></b></h5></li>
+                    <li><h5><i class="material-icons">import_contacts</i><b><router-link to="/story" style="font-size:95%;">Story</router-link></b></h5></li>
+                    <li><h5><i class="material-icons">people_outline</i><b><router-link to="/social" style="font-size:95%;">Social</router-link></b></h5></li>
+                    <li><h5><i class="material-icons">redeem</i><b><router-link to="/shop" style="font-size:95%;">Shop</router-link></b></h5></li>
                 </ul>
                 </div>
 <br><br>
