@@ -69,14 +69,12 @@
                 <!--This is the start of the next section-->
                             <div class="section">
                                 <div class="row" id="section3">
-                                    <br>
-                                    <h5 class="white-text text-darken-3 lighten-3">
-                                        "If one thought created the universe, 
-                                        then who was the first to think?"
-                                    </h5>
-                                    <h5 class="header">- Justin Gladstone</h5>
-                                    <br>
+                                    <h6 class="white-text">Additional Links</h6><br>
+                                    <div class="col s12 m4 l4"><a href="https://www.facebook.com/TheOtherSideSeries/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6VZ////81Up0yT5xgc61+jbsvTZyXo8hFXaOirM0nSJmlrs7O1OUkRpkfQ5c1UZ1oerKHlcDp6/M9WKHHzeHV2ulxgravt9Td4Ozl6PGDkb7ByN5YbatQZ6j29/q3v9h2hrhMY6aQnMSsAnKHAAAC70lEQVR4nO3caXLiMBRFYdoihhhsQ5jDlPT+F9mdqv7bRrYQ7z7XOQug9BUWHiQzmRARERERERERERERERERqVe0IZQPCtaDHFwo62Yz/VrP3jtbrH0Sy7rYH46/YtpV1oPtX6jCbBel+2npThjq/Taa51AYmrdTH583YdHsP/r5nAnLTa/j05+w+ezv8yRsq/MQoB9hmPeegb6E5eU2DOhFWK4G+rwIw3CgD2G4Dge6ELaboXPQi7CJu4nwK6zvKUAHwvCVBHQgrFMmoQdh4jGqL2wviUB5YRP/uMKnsJ2mAtWF9XLkwjblcs2FsDqMXZh6LpQXhn06UFtYpZ7t5YX1wEczboTF/AlAaWFYP0OovPZU9pmGt9194W79sIq/Jt2uqqrytwbcxJ4NT9e6tR7soEIk8N749E2K7zjgubEe6dAi75yOboGxwrnTQ/RvRZTwIHy6e1SccF5Yj3N4UcJjbT3MhKKEh9J6mAlFCZWvyR4WJXxDqBxChPohRKgfQoT6IUSoH0KE+iFEqB9ChPqNQ1h0vKJcxWwt/aofvelsDFzNOlpECO9dH/DT+8ZUWMYgErNdfXuB8Ga7RPwCofHy2wuE59EfpQvbH9MXCNejF65st2q8QPhtu5Mhv/BmfE2TX/hhvGMqv3BpvBslv/BuvGUqv3A2+nloff+YX3gx3rmYX2j9CCC78Ga9NzO78GS9dTG7cDv679B8c2Z24e/R/9LsRy+8Wm/kzy60nobZhdb3TvmF9u8e5hYaP0p8gfB99PPQ/l2F3MKp+StDuYXWvuxC60eJ+YXm907ZhQJ/NlA+4d9ZOrrbH6WTzbyjmL+D/Oz6BNsl/H8V/y9E7TYpOz7BGveoceyn6QohQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLs0R8aFUYEFLSeAgAAAABJRU5ErkJggg==" width="20%;"></a></div>
+                                    <div class="col s12 m4 l4"><a href="https://www.patreon.com/TheOtherSideBooks"><img src="https://profilmmakerapps.com/images/patreon.jpg" width="20%;"></a></div>
+                                    <div class="col s12 m4 l4"><a href="https://www.instagram.com/theothersidebooks/"><img src="https://www.parkviewbaptist.com/wp-content/uploads/2019/09/Instagram-Icon.png" width="20%;"></a></div>
                                 </div>
+                               
                             </div>
 
                             <div class="parallax-container">
@@ -84,22 +82,24 @@
                                     <img src="images/parallax2.jpg">
                                 </div>
                             </div>
+
+                            
         </div>
         <!--End of the Parallax--->
 
         <!--This is the brown row that appears behind section 1-->
             <div class="backRow"> 
-                <p>.</p>
+                <p style="color:#161312;">.</p>
             </div>
 
 
         <!--Background quotes to the page that are fixed-->
         <div class="backQuotes">
             <div class="row">
-                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>Even with this sad life, I still had a reason to run</i></h3></div>
-                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>I cried because i was scared, Even I experianced all those things.</i></h3></div>
-                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>But... will you understand?</i></h3></div>
-                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i> - Haru</i></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>When do you think a story deserves an expansion?</i></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>When should a series meet its end?</i></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i>There's still much more to be done.</i></h3></div>
+                <div class="col s12 m12 l12"><h3 class="blue-grey-text"><i> - Justin Gladstone</i></h3></div>
                 
             </div>
         </div>
@@ -207,7 +207,7 @@
     top:35%;
     width:100%;
     z-index: -2;
-    opacity: 0.06;
+    opacity: 0.3;
     font-family: cursive;
     color:#0C0E13;
     
