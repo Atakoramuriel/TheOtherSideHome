@@ -49,10 +49,7 @@
                               
                                  <img :src="Images.bookII" id="bookCover2" v-on:click="bookIIDesc=!bookIIDesc">
                                  <!--Transitions will appear below for the text--->
-                                <h6 class="white-text" v-if="bookIIDesc">The Other Side is a mystery and fantasy novel 
-                                    that delves into a parallel world that almost completely 
-                                    reflects our own. If people reflect us, then what could we 
-                                    say about our emotions? Is our sadness a result of their happiness? 
+                                <h6 class="white-text" v-if="bookIIDesc">The Other Side 2 is the next adventure coming soon. 
                                 </h6> <br>
                                 <div class="btn large blue black-text" v-if="bookIIDesc">Start</div>
                             </div>
