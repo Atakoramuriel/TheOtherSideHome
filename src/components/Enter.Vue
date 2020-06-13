@@ -12,8 +12,8 @@
                     <div class="row" id="section1">
                         <br>
                         <h5 class="white-text text-darken-3 lighten-3">
-                            "If one thought created the universe, 
-                            then who was the first to think?"
+                          <i>  "If one thought created the universe, 
+                            then who was the first to think?"</i>
                         </h5>
                         <h5 class="header">- Justin Gladstone</h5>
                         <br>
@@ -35,7 +35,7 @@
                                     reflects our own. If people reflect us, then what could we 
                                     say about our emotions? Is our sadness a result of their happiness? 
                                 </h6>  <br>   
-                                <div class="btn large black-text" style="background-color:coral;" v-if="bookIDesc">Start</div>             
+                                <div class="btn large black-text" style="background-color:coral;" v-if="bookIDesc"><a class="black-text" href="https://www.amazon.com/dp/1717795617">Buy</a></div>             
 
                             </div>
                         <!--Describe each of the books in this area-->
@@ -49,9 +49,9 @@
                               
                                  <img :src="Images.bookII" id="bookCover2" v-on:click="bookIIDesc=!bookIIDesc">
                                  <!--Transitions will appear below for the text--->
-                                <h6 class="white-text" v-if="bookIIDesc">The Other Side 2 is the next adventure coming soon. 
+                                <h6 class="white-text" v-if="bookIIDesc">The Other side II represents the theme of duality on small and large scales. 
                                 </h6> <br>
-                                <div class="btn large blue black-text" v-if="bookIIDesc">Start</div>
+                                <div class="btn large blue black-text" v-if="bookIIDesc"><a href="https://theothersidebooks718.wixsite.com/theotherside/whats-next" class="black-text">Buy</a></div>
                             </div>
                         <!---This is the start of the background to add life--->
                                 <div class="background">
