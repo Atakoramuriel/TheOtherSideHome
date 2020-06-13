@@ -56,39 +56,52 @@
                                 </h6> <br>
                                 <div class="btn large blue black-text" v-if="bookIIDesc">Start</div>
                             </div>
-
-                            <div class="background">
-                               
-                                <!--Section for loaders to add some movement and life to the background-->
-                                  <div class="progress" style="background-color:#1B1A1B;">
-                                    <div class="indeterminate" style="background-color:#4B1411;"></div>
-                                  </div>
-                            </div>
+                        <!---This is the start of the background to add life--->
+                                <div class="background">
+                                
+                                    <!--Section for loaders to add some movement and life to the background-->
+                                            <div class="progress" style="background-color:#1B1A1B;">
+                                                <div class="indeterminate" style="background-color:#4B1411;"></div>
+                                            </div>
+                                </div>
                     </div>
                 </div>
                 <!--This is the start of the next section-->
-                  <div class="section">
-                    <div class="row" id="section3">
-                        <br>
-                        <h5 class="white-text text-darken-3 lighten-3">
-                            "If one thought created the universe, 
-                            then who was the first to think?"
-                        </h5>
-                        <h5 class="header">- Justin Gladstone</h5>
-                        <br>
-                    </div>
-                </div>
+                            <div class="section">
+                                <div class="row" id="section3">
+                                    <br>
+                                    <h5 class="white-text text-darken-3 lighten-3">
+                                        "If one thought created the universe, 
+                                        then who was the first to think?"
+                                    </h5>
+                                    <h5 class="header">- Justin Gladstone</h5>
+                                    <br>
+                                </div>
+                            </div>
 
-                <div class="parallax-container">
-                    <div class="parallax">
-                        <img src="images/parallax2.jpg">
-                    </div>
-                </div>
+                            <div class="parallax-container">
+                                <div class="parallax">
+                                    <img src="images/parallax2.jpg">
+                                </div>
+                            </div>
         </div>
         <!--End of the Parallax--->
-         <div class="backRow"> 
-              <p>.</p>
+
+        <!--This is the brown row that appears behind section 1-->
+            <div class="backRow"> 
+                <p>.</p>
+            </div>
+
+
+        <!--Background quotes to the page that are fixed-->
+        <div class="backQuotes">
+            <div class="row">
+                <div class="col s12 m4 l4"><h3 class="blue-grey-text">But</h3></div>
+                <div class="col s12 m4 l4"><h3 class="blue-grey-text">Will you understand?</h3></div>
+                <div class="col s12 m4 l4"><h3 class="blue-grey-text"></h3></div>
+            </div>
         </div>
+
 
     </div>
 </template>
