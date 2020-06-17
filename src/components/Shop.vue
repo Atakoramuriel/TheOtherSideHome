@@ -1,7 +1,6 @@
 <template>
     <div id="shop">
-        <h3>Shop The Other Side</h3>
-
+        <br><br><br><br><br>
         <div class="row" id="section1">
             <div class="col s12 m6 l6"><br>
             <img :src="Images.bookI" id="bookCover">
@@ -9,11 +8,11 @@
           
             <div class="col s12 m4 l4">
                 <h3 class="white-text">Start the Story</h3>
-                <h5 style="color:#F54038;"><i>"If people reflect us, then what could we say about our emotions? Is our sadness a result of their happiness?"</i></h5>
+                <h6 style="color:#F54038;"><i>"If people reflect us, then what could we say about our emotions? Is our sadness a result of their happiness?"</i></h6>
                 <h5 class="white-text">Purchase the hard cover or digital copy of TheOtherSide or see what some of the 
                     other previous readers have to say about the story.
                 </h5> <br>
-                <button class="btn-large black-text" style="background-color:coral;">View</button>
+                <button class="btn-large black-text" style="background-color:coral;"><a href="https://www.amazon.com/gp/product/1717773842/ref=ox_sc_act_title_1?smid=A1Y53T3O3Q25L8&psc=1" class="black-text">View</a></button>
             </div>
 
         <!--Test applying background Text for this row--->
@@ -49,6 +48,7 @@
         padding-top:15%;
         padding-bottom:17%;
         font-family: cursive;
+        color:rgba(0, 0, 0, 0.507)
     }
 
 </style>
