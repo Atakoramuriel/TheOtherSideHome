@@ -176,7 +176,7 @@
     background-image: linear-gradient(to right,#4B1411,black);
     position: absolute;
     width: 100%;
-    top:125%;
+    top:130%;
 }
 
 /*This handles the background*/
@@ -190,11 +190,12 @@
 /*Back row*/
 .backRow{ /*This is the brown background row that appears behind the books*/
     background-color:#100807;
+    opacity: 0.75;
     padding-top:10%;
     padding-bottom:5%;
     position: absolute;
     width: 100%;
-    top:123%;
+    top:107%;
     z-index: -1;
 }
 
