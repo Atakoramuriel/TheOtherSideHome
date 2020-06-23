@@ -82,7 +82,7 @@
 
                             
         </div>
-        <!--End of the Parallax--->
+        <!--End of the Parallax--->   
 
         <!--This is the brown row that appears behind section 1-->
             <div class="backRow"> 
