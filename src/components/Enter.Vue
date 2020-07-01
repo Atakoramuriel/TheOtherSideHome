@@ -71,7 +71,7 @@
                                     <div class="col s12 m4 l4"><a href="https://www.patreon.com/TheOtherSideBooks"><img src="https://profilmmakerapps.com/images/patreon.jpg" width="20%;"></a></div>
                                     <div class="col s12 m4 l4"><a href="https://www.instagram.com/theothersidebooks/"><img src="https://www.parkviewbaptist.com/wp-content/uploads/2019/09/Instagram-Icon.png" width="20%;"></a></div>
                                 </div>
-                               
+                               <br>
                             </div>
 
                             <div class="parallax-container">
@@ -108,6 +108,7 @@
 <style scoped>
 #Enter{
     padding-top:10%;
+  
 }
 
 /*Area for parallax to start*/
@@ -195,7 +196,7 @@
     padding-bottom:5%;
     position: absolute;
     width: 100%;
-    top:107%;
+    top:120%;
     z-index: -1;
 }
 
@@ -228,12 +229,16 @@ export default {
 
             //Display book Descriptions
             bookIDesc: false,
-            bookIIDesc: false
+            bookIIDesc: false,
+            
         }
     },
     created(){
-        this.parallax();
+     
          
+    },
+    beforeUpdate(){
+       
     },
     methods: {
         Parallax(){
