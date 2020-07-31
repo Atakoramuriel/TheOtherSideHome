@@ -101,7 +101,7 @@ export default {
     data(){
         return{
             Images:{
-                title: require("/Users/atakoramuriel/Desktop/tosh/Img/Title.png"), //This is for the image of TheOtherSide
+                title: require("/Users/atakoramuriel/Desktop/tosh/Img/The_Other_Side_Transparent_Logo_2020_INVERT.png"), //This is for the image of TheOtherSide
             }
         }
     },
