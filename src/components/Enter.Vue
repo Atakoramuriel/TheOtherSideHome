@@ -20,7 +20,7 @@
                           <i>  "If one thought created the universe, <br>
                             then who was the first to think?"</i>
                         </h5>
-                        <h4 class="header" id="testFont">- ? ? ? ?</h4>
+                        <h4 class="header white-text" id="testFont">- ? ? ? ? -</h4>
                         <br>
                     </div>
                 </div>
@@ -31,6 +31,7 @@
                         <br>
                         <!--Area for Mobile display only-->
                                 <h4 class="white-text hide-on-med-and-up"><i>Select Your Story</i></h4>
+                                 <h3 class="white-text" id="header2">Choose your Journey</h3>
                           
                         <!--Describe the first book-->
                             <div class="col s12 m4 l4">
@@ -46,10 +47,24 @@
 
                             </div>
                         <!--Describe each of the books in this area-->
-                            <div class="col s12 m4 l4 hide-on-small-only"><br><br><br><br><br><br><br><br><br>
+                            <div class="col s12 m4 l4 " v-if="bookIDesc">
+                                                  <h4 class="white-text" id="bookTitle">The Other Side <br> Limited Edition</h4>
                             <!--The text below needs to be animated in--->
-                              <h3 class="white-text" id="header2">Choose your Journey</h3>
+                                    <img :src="Images.bookISpecial"  id="bookCoverLimited" v-on:click="bookIDesc=!bookIDesc">
+                                <!--Transitions will appear below for the text on clear--->
+                                <h5 class="white-text" id="testFont" v-if="bookIDesc">Get the Limited edition to the story
+                                </h5>  <br>   
+                                <div class="btn large black-text" style="background-color:white;" v-if="bookIDesc"><a class="black-text" href="https://www.amazon.com/dp/1717795617?utm_medium=&utm_source=&utm_campaign=☾+the+other+side%3a+limited+edition+☽++[9+ratings">Buy</a></div>  
+                             
                             </div>
+
+                        <!---Hide this column at the start-->
+                        <div class="col s12 m4 l4 hide-on-small-only" v-if="!bookIDesc">
+
+                        </div>
+                        <!---End of the hidden colmunn-->
+
+
                         <!--Describe the second book-->
                             <div class="col s12 m4 l4">
                                 <h3 class="white-text" id="bookTitle">The Other Side II</h3>
@@ -88,10 +103,13 @@
                             <div class="section hide-on-small-only">
                                 <div class="row" id="section3">
                                     <h6 class="white-text">Additional Links</h6><br>
-                                    <div class="col s12 m4 l4"><a href="https://www.facebook.com/TheOtherSideSeries/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6VZ////81Up0yT5xgc61+jbsvTZyXo8hFXaOirM0nSJmlrs7O1OUkRpkfQ5c1UZ1oerKHlcDp6/M9WKHHzeHV2ulxgravt9Td4Ozl6PGDkb7ByN5YbatQZ6j29/q3v9h2hrhMY6aQnMSsAnKHAAAC70lEQVR4nO3caXLiMBRFYdoihhhsQ5jDlPT+F9mdqv7bRrYQ7z7XOQug9BUWHiQzmRARERERERERERERERERqVe0IZQPCtaDHFwo62Yz/VrP3jtbrH0Sy7rYH46/YtpV1oPtX6jCbBel+2npThjq/Taa51AYmrdTH583YdHsP/r5nAnLTa/j05+w+ezv8yRsq/MQoB9hmPeegb6E5eU2DOhFWK4G+rwIw3CgD2G4Dge6ELaboXPQi7CJu4nwK6zvKUAHwvCVBHQgrFMmoQdh4jGqL2wviUB5YRP/uMKnsJ2mAtWF9XLkwjblcs2FsDqMXZh6LpQXhn06UFtYpZ7t5YX1wEczboTF/AlAaWFYP0OovPZU9pmGt9194W79sIq/Jt2uqqrytwbcxJ4NT9e6tR7soEIk8N749E2K7zjgubEe6dAi75yOboGxwrnTQ/RvRZTwIHy6e1SccF5Yj3N4UcJjbT3MhKKEh9J6mAlFCZWvyR4WJXxDqBxChPohRKgfQoT6IUSoH0KE+iFEqB9ChPqNQ1h0vKJcxWwt/aofvelsDFzNOlpECO9dH/DT+8ZUWMYgErNdfXuB8Ga7RPwCofHy2wuE59EfpQvbH9MXCNejF65st2q8QPhtu5Mhv/BmfE2TX/hhvGMqv3BpvBslv/BuvGUqv3A2+nloff+YX3gx3rmYX2j9CCC78Ga9NzO78GS9dTG7cDv679B8c2Z24e/R/9LsRy+8Wm/kzy60nobZhdb3TvmF9u8e5hYaP0p8gfB99PPQ/l2F3MKp+StDuYXWvuxC60eJ+YXm907ZhQJ/NlA+4d9ZOrrbH6WTzbyjmL+D/Oz6BNsl/H8V/y9E7TYpOz7BGveoceyn6QohQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLs0R8aFUYEFLSeAgAAAABJRU5ErkJggg==" width="20%;"></a></div>
-                                    <div class="col s12 m4 l4"><a href="https://www.patreon.com/TheOtherSideBooks"><img src="https://profilmmakerapps.com/images/patreon.jpg" width="20%;"></a></div>
-                                    <div class="col s12 m4 l4"><a href="https://www.instagram.com/theothersidebooks/"><img src="https://www.parkviewbaptist.com/wp-content/uploads/2019/09/Instagram-Icon.png" width="20%;"></a></div>
+                                    <div class="col s12 m4 l4"><a href="https://www.facebook.com/TheOtherSideSeries/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6VZ////81Up0yT5xgc61+jbsvTZyXo8hFXaOirM0nSJmlrs7O1OUkRpkfQ5c1UZ1oerKHlcDp6/M9WKHHzeHV2ulxgravt9Td4Ozl6PGDkb7ByN5YbatQZ6j29/q3v9h2hrhMY6aQnMSsAnKHAAAC70lEQVR4nO3caXLiMBRFYdoihhhsQ5jDlPT+F9mdqv7bRrYQ7z7XOQug9BUWHiQzmRARERERERERERERERERqVe0IZQPCtaDHFwo62Yz/VrP3jtbrH0Sy7rYH46/YtpV1oPtX6jCbBel+2npThjq/Taa51AYmrdTH583YdHsP/r5nAnLTa/j05+w+ezv8yRsq/MQoB9hmPeegb6E5eU2DOhFWK4G+rwIw3CgD2G4Dge6ELaboXPQi7CJu4nwK6zvKUAHwvCVBHQgrFMmoQdh4jGqL2wviUB5YRP/uMKnsJ2mAtWF9XLkwjblcs2FsDqMXZh6LpQXhn06UFtYpZ7t5YX1wEczboTF/AlAaWFYP0OovPZU9pmGt9194W79sIq/Jt2uqqrytwbcxJ4NT9e6tR7soEIk8N749E2K7zjgubEe6dAi75yOboGxwrnTQ/RvRZTwIHy6e1SccF5Yj3N4UcJjbT3MhKKEh9J6mAlFCZWvyR4WJXxDqBxChPohRKgfQoT6IUSoH0KE+iFEqB9ChPqNQ1h0vKJcxWwt/aofvelsDFzNOlpECO9dH/DT+8ZUWMYgErNdfXuB8Ga7RPwCofHy2wuE59EfpQvbH9MXCNejF65st2q8QPhtu5Mhv/BmfE2TX/hhvGMqv3BpvBslv/BuvGUqv3A2+nloff+YX3gx3rmYX2j9CCC78Ga9NzO78GS9dTG7cDv679B8c2Z24e/R/9LsRy+8Wm/kzy60nobZhdb3TvmF9u8e5hYaP0p8gfB99PPQ/l2F3MKp+StDuYXWvuxC60eJ+YXm907ZhQJ/NlA+4d9ZOrrbH6WTzbyjmL+D/Oz6BNsl/H8V/y9E7TYpOz7BGveoceyn6QohQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLUDyFC/RAi1A8hQv0QItQPIUL9ECLs0R8aFUYEFLSeAgAAAABJRU5ErkJggg==" width="20%;"></a> <h5 class="blue-text">Facebook</h5></div>
+                                    <div class="col s12 m4 l4"><a href="https://www.patreon.com/TheOtherSideBooks"><img src="https://profilmmakerapps.com/images/patreon.jpg" width="20%;"></a> <br> <h5 class="orange-text">Patreon</h5></div>
+                                    <div class="col s12 m4 l4"><a href="https://www.instagram.com/theothersidebooks/"><img src="https://www.parkviewbaptist.com/wp-content/uploads/2019/09/Instagram-Icon.png" width="20%;"></a><h5 class="purple-text">Instagram</h5></div>
+                                    <h5>___</h5>
+                                    <h5 class="white-text" >&copy The Other Side 2020 </h5>
                                 </div>
+        
                                <br>
                             </div>
 
@@ -201,6 +219,16 @@
     border: solid coral 2px;
 }
 
+/*Edit style for the Limited Edition book cover on the left*/
+#bookCoverLimited{
+    width: 60%;
+}
+#bookCoverLimited:hover{
+    cursor: pointer;
+    width:65%;
+    border: solid white 2px;
+}
+
 /*Styling for the second book on the right*/
 #bookCover2{
     width: 55%;
@@ -235,7 +263,7 @@
     padding-bottom:5%;
     position: absolute;
     width: 100%;
-    top:120%;
+    top:130%;
     z-index: -1;
 }
 
@@ -263,6 +291,7 @@ export default {
 
                 //Area for the book Coveres
                 bookI: require("/Users/atakoramuriel/Desktop/tosh/Img/BookCover.jpg"),
+                bookISpecial: require("/Users/atakoramuriel/Desktop/tosh/Img/The_Other_Side_White_Book_Cover_300_DPI_copy.jpg"),
                 bookII: require("/Users/atakoramuriel/Desktop/tosh/Img/BookII.jpg"),
             },
 
